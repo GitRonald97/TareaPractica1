@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi primera página web</title>
+	 <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo de estilos CSS -->
+
+</head>
+<body>
+ <nav class="barra-navegacion">
+        <ul>
+            <li><a href="#biografia">Biografía</a></li>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="URL de tus redes sociales" target="_blank">Redes Sociales</a></li>
+        </ul>
+    </nav>
+
+ 
+
+    <h1>Hola, mundo!</h1>
+    <p>Mi nombre es Ronald Cabello.</p>
+
+    <h2>Mis redes sociales:</h2>
+    <a href="www.youtube.com">Mi Red Social Favorita es Youtube</a>
+
+    <h2>Mis pasatiempos:</h2>
+    <ul>
+        <li>Leer</li>
+        <li>Jugar al ajedrez</li>
+        <li>jugar al fútbol</li>
+    </ul>
+	
+	
+	<h2>Tabla de Países y Capitales:</h2>
+    <table border="1">
+        <tr>
+            <th>País</th>
+            <th>Capital</th>
+        </tr>
+        <tr>
+            <td>Estados Unidos</td>
+            <td>Washington D.C.</td>
+        </tr>
+        <tr>
+            <td>Francia</td>
+            <td>París</td>
+        </tr>
+        <tr>
+            <td>Japón</td>
+            <td>Tokio</td>
+        </tr>
+    </table>
+	
+	
+	<h1>Formulario de Información Personal</h1>
+
+    <form action="procesar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" required><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+	
+	
+	 <div id="biografia">
+        <h1>Mi Biografía</h1>
+        <p>Aquí está mi biografía...</p>
+    </div>
+	
+	
+	
+	 <div class="caja">
+        <div class="slider"></div>
+        <p>El problema no es que mientas el problema es que te creo</p>
+    </div>
+	
+	
+	
+	
+	<h1>Mis Pasatiempos</h1>
+
+    <div class="galeria">
+        <img src="images/imagen1.jfif" alt="Pasatiempo 1">
+        <img src="images/imagen2.jfif" alt="Pasatiempo 2">
+        <img src="images/imagen3.jfif" alt="Pasatiempo 3">
+    </div>
+
+    <!-- Scripts para la ventana emergente -->
+    <script src="lightbox.js"></script>
+	
+	
+</body>
+</html>

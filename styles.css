@@ -1,0 +1,109 @@
+/* styles.css */
+
+#biografia {
+    background-color: #f2f2f2; /* Cambia el color de fondo */
+    padding: 20px; /* Agrega espacio alrededor del contenido */
+}
+
+h1 {
+    color: #008CBA; /* Cambia el color de fuente del encabezado */
+    font-size: 36px; /* Cambia el tamaño del encabezado */
+}
+
+.caja {
+    width: 300px; /* Ancho de la caja */
+    height: 200px; /* Altura de la caja */
+    border: 2px solid #333; /* Borde de la caja */
+    background-color: #ffcc00; /* Color de fondo de la caja */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.slider {
+    width: 100%; /* Ancho del slider igual al 100% del contenedor */
+    height: 50px; /* Altura del slider */
+    background-color: #008CBA; /* Color de fondo del slider */
+    position: absolute;
+    bottom: 0; /* Coloca el slider en la parte inferior de la caja */
+}
+
+p {
+    font-size: 18px; /* Tamaño del texto */
+    color: #333; /* Color del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+}
+
+/* Estilos para la barra de navegación */
+.barra-navegacion {
+    background-color: #333;
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.barra-navegacion li {
+    margin-right: 20px;
+}
+
+.barra-navegacion a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.barra-navegacion a:hover {
+    color: #ff6600; /* Color al hacer clic o pasar el cursor sobre los enlaces */
+}
+
+/* Estilos generales para dispositivos de escritorio */
+/* ... (otros estilos) ... */
+
+/* Media query para dispositivos móviles */
+@media (max-width: 768px) {
+    .barra-navegacion ul {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna */
+    }
+
+    .barra-navegacion li {
+        margin-right: 0; /* Elimina el margen derecho en dispositivos móviles */
+        margin-bottom: 10px; /* Agrega espacio entre los elementos en dispositivos móviles */
+    }
+
+    /* Estilos adicionales para otros elementos en dispositivos móviles */
+    /* ... (otros estilos específicos para móviles) ... */
+}
+
+/* Estilos generales para la galería */
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* Estilos para la ventana emergente */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.lightbox img {
+    width: 80%;
+    height: auto;
+    border: 2px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
